@@ -12,12 +12,14 @@
 jest.mock('./Service', () => (function () {
   this.getName = () => "something else"
 }));
-const {ClientWithoutInjection} = require('./Client')
-describe('DI', function() {
-  describe('Client', function() {
-    it('check it', function() {
-        const co = new ClientWithoutInjection()
-        expect(co.greet()).toBe("Hello something else")
+const {
+  ClientWithoutInjection
+} = require('./Client')
+describe('DI', function () {
+  describe('Client', function () {
+    it('check it', function () {
+      const co = new ClientWithoutInjection()
+      expect(co.greet()).toBe("Hello something else")
     });
   });
 });

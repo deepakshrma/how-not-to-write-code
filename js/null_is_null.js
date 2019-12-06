@@ -3,11 +3,10 @@ class Person {
     this.name = name || null;
   }
 }
-
 var deepak = new Person();
 // how they check
-if(deepak.name == null){
-    console.log("null")
+if (deepak.name == null) {
+  console.log("null")
 }
 console.log(deepak.name && true); // null
 deepak = new Person("");

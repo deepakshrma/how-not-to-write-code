@@ -1,6 +1,7 @@
+// Service.js
 class Service {
-    getName() {
-        return "This is service"
-    }
+  getName() {
+    return "This is service";
+  }
 }
-module.exports = Service
+module.exports = Service;

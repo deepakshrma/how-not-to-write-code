@@ -22,7 +22,8 @@ console.log(mapped);
 
 //Break down
 mapped = [];
-const isEven = num => num % 2 == 0;
+const isEven = num => num % 2 == 0; // Function returns if even
+// Accumulator fun to collect all even number
 const accumulator = (records, num) => {
   // push the current numb at last and create new array
   if (isEven(num)) {

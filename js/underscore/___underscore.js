@@ -10,10 +10,10 @@ console.log(instance); // Something { [Symbol()]: 'test' }
 
 class Person {
   constructor(nm) {
-    this.setName = function(name) {
+    this.setName = function (name) {
       nm = name;
     };
-    this.getName = function() {
+    this.getName = function () {
       return nm;
     };
   }
@@ -24,10 +24,10 @@ person.setName("kapeed");
 console.log(person.getName()); // "kapeed"
 
 function PersonF(nm) {
-  this.setName = function(name) {
+  this.setName = function (name) {
     nm = name;
   };
-  this.getName = function() {
+  this.getName = function () {
     return nm;
   };
 }
