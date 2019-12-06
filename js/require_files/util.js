@@ -6,6 +6,17 @@ function requireJSON(path) {
   }
   return files[path];
 }
+function requireFile(path) {
+  if (!files[path]) {
+    files[path] = fs.readFileSync(path);
+  }
+  return files[path];
+}
+function requireFileNoCache(path) {
+  return fs.readFileSync(path);
+}
 module.exports = {
-  requireJSON
+  requireJSON,
+  requireFile,
+  requireFileNoCache
 };
